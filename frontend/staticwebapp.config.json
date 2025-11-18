@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "route": "/api/log-download",
+      "allowedRoles": ["anonymous"],
+      "methods": ["POST"],
+      "rewrite": "https://qp-logs-api-gpfad6h0drb3huep.centralindia-01.azurewebsites.net/api/log-download"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*"]
+  }
+}
