@@ -317,7 +317,8 @@ export default function StudentDashboard() {
   const [selectedPaper, setSelectedPaper] = useState(null);
   const navigate = useNavigate();
 
-  const API_URL = "https://qp-logs-api-gpfad6h0drb3huep.centralindia-01.azurewebsites.net/api/log-download";
+  const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/log-download`;
+
 
   useEffect(() => {
     fetchUserData();
